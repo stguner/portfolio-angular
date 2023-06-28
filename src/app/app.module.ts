@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortfolioCardsComponent } from './portfolio-cards/portfolio-cards.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactmeComponent } from './contactme/contactme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioCardsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

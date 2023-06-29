@@ -7,13 +7,15 @@ import { PortfolioCardsComponent } from './portfolio-cards/portfolio-cards.compo
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactmeComponent } from './contactme/contactme.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioCardsComponent,
     FooterComponent,
-    ContactmeComponent
+    ContactmeComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

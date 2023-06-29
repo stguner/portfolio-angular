@@ -1,51 +1,41 @@
-
-<div class="col-lg-12 col-md-12" ng-app="" 
-ng-init="firstName='Shaik';
-         lastName='Maqsood';
-         place='India';
+<div class="bana-ulas" style="background-color: whitesmoke;">
+<div class="col-lg-12 col-md-12 text-center" ng-app="" 
+ng-init="firstName='Süleyman Türker';
+         lastName='Güner';
+         place='Türkiye';
          profession='Web Developer';
-         company='Capgemini';
-         message='Today I am making this Pen to show you a cool way to make a Contact page which looks like a Hand written Letter. You can go ahead and change the contents in the Text boxes to change the content in the Letter. How did I do it? Angular JS.';
-         email='shaikmaqsood001@gmail.com'">
+         company='Talya Bilişim';
+         message='I am a Web Developer, working in Talya Bilişim.';
+         email='gunersuleymanturker@gmail.com'">
+         <div style="font-family: 'Lobster', cursive;">
+          <h1>Bana Ulaş</h1>
+      </div>
+</div>
+<div class="row" style="margin-right: 0px; margin-left: 0px;">
     <div class="col-lg-6 col-md-6 col-sm-6 topgap">
-        
+
     <table width="100%">
       <tr>
         <td>
-            <label for="firstName">First Name:</label>
-            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please Enter your First Name" ng-model="firstName" required/>
+            <label for="firstName">Ad:</label>
+            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Adınızı giriniz" ng-model="firstName" required/>
         </td>
         <td>
-            <label for="lastName">Last Name:</label>
-            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please Enter your Last Name" ng-model="lastName" required/>
+            <label for="lastName">Soyad:</label>
+            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Soyadınızı giriniz" ng-model="lastName" required/>
         </td>
       </tr>
       
       <tr>
         <td>
-            <label for="email">Email ID:</label>
-            <input type="email" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please enter your Email ID" ng-model="email" required/>
-        </td>
-        <td>
-            <label for="place">Country:</label>
-            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please enter your Country" ng-model="place" required/>
+            <label for="email">Eposta:</label>
+            <input type="email" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Eposta giriniz" ng-model="email" required/>
         </td>
       </tr>
-      <tr>
-        <td>
-            <label for="company">Company:</label>
-            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please enter your Comapany Name" ng-model="company" required/>
-        </td>
-        <td>
-            <label for="profession">Profession:</label>
-            <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Please enter your Profession" ng-model="profession" required/>
-        </td>
-      </tr>
-
       <tr>
         <td colspan="2">
             <label for="message">Message:</label>
-            <textarea class="form-control" rows="5" id="message" ng-model="message"></textarea>
+            <textarea class="form-control" style="resize: none;" rows="5" id="message" ng-model="message"></textarea>
         </td>
       </tr>
     </table>
@@ -57,19 +47,17 @@ ng-init="firstName='Shaik';
         <div class="paper">
           <div class="lines">
             <div class="Lettertext" spellcheck="false">
-              Hello Curious Cat, <br /><br />
-              This is Süleyman. I am from Antalya. 
+              Selam, <br /><br />
+              Ben {{ firstName+" "+lastName }}. 
               <br/><br/>
-              I am a Web Developer, working in Talya Bilişim.
-              <br/><br/>
-                I am a Computer Engineer, graduated from Akdeniz University.
+              {{message}}
               <br/><br />
-              Like my Work?  Share your Love, gimme a heart &#9829;&#9829;&#9829; <br />
-              You can reach me back on gunersuleymanturker@gmail.com.
+              Bana bu mailden ulaşabilirsin: {{email}}.
               <br/><br/>
-              Thanks and Regards,<p>Süleyman Türker Güner</p>
+              Görüşmek üzere,<p>{{ firstName+" "+lastName }}
             </div>
           </div>
         </div>
     </div>
+</div>
 </div>

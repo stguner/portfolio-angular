@@ -12,4 +12,5 @@ export class ContactmeComponent {
   place = "Antalya";
   profession = "Software Developer";
   company = "Talya Bilişim";
+  message = "I am a software developer who is interested in web technologies and mobile technologies. I am also interested in artificial intelligence and machine learning. I am currently working as a software developer at Talya Bilişim.";
 }

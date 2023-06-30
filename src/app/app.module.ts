@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     PortfolioCardsComponent,
     FooterComponent,
     ContactmeComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

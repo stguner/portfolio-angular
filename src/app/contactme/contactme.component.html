@@ -20,34 +20,35 @@ ng-init="firstName='Süleyman Türker';
     <table width="100%">
       <tr>
         <td>
-            <label for="firstName">Ad:</label>
+            <label for="firstName" style="font-family: 'Lobster', cursive; font-size: 20px;">Ad:</label>
             <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Adınızı giriniz" ng-model="firstName" required/>
         </td>
         <td>
-            <label for="lastName">Soyad:</label>
+            <label for="lastName" style="font-family: 'Lobster', cursive; font-size: 20px;">Soyad:</label>
             <input type="text" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Soyadınızı giriniz" ng-model="lastName" required/>
         </td>
       </tr>
       
       <tr>
         <td>
-            <label for="email">Eposta:</label>
+            <label for="email" style="font-family: 'Lobster', cursive; font-size: 20px;">Eposta:</label>
             <input type="email" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="Eposta giriniz" ng-model="email" required/>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-            <label for="message">Mesaj:</label>
+            <label for="message" style="font-family: 'Lobster', cursive; font-size: 20px;">Mesaj:</label>
             <textarea class="form-control" style="resize: none;" rows="5" id="message" ng-model="message"></textarea>
         </td>
       </tr>
     </table>
-    
-    <button type="button" class="btn btn-danger btn-block buttonSubmit">Gönder</button>
+    <div class="gonder-btn text-center">
+      <button type="button" class="btn btn-danger btn-block buttonSubmit">Gönder</button>
+    </div>
     </div>
 
     <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="paper d-flex mx-auto" style="margin-top:30px; margin-bottom: 30px;">
+        <div class="paper d-flex mx-auto" style="margin-top:30px; margin-bottom: 30px; padding-left: 30px;">
           <div class="lines">
             <div class="Lettertext" spellcheck="false">
               Selam, <br /><br />

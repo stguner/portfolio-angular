@@ -1,0 +1,52 @@
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    })
+</script>
+<header>
+
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a href="#" class="logo">STG</a>
+            <ul class="nav-links">
+                <li><a href="#">Hakkımda</a></li>
+                <li><a href="#">Projelerim</a></li>
+                <li><a href="#">Bana Ulaş</a></li>
+                <!-- <button>Sign In</button> -->
+                <!-- <button>Sign Up</button> -->
+            </ul>
+            <i class="fas fa-bars fa-2x" id="burger"></i>
+        </nav>
+        <section class="showcase">
+            <div class="row">
+                <div class="col-6 ilk-col">
+                    <h1>Ben Kimim?</h1>
+                    <p>Web geliştirmeyle ilgilenen ve bundan keyif alan biriyim</p>
+                    <p>Akdeniz Bilgisayar Mühendisliği bölümü son sınıf öğrencisiyim. Benim hakkımda daha fazla öğrenmek için butona tıkla </p>
+                    <button>Daha Fazla</button>
+                </div>
+                <div class="col-6">
+                    <div class="hakkimda">
+                        <div class="karsilama">
+                          <div class="karsilama_pp">
+                            <img id="pp" src="../../assets/img/PP_cv_small.jpg" alt="Profil Fotoğrafı">
+                          </div>
+                          <div class="karsilama_yazi">
+                            <h1 class="karsilama_h1">Merhaba, ben Süleyman Türker Güner</h1>
+                            <p class="karsilama_p">Web Geliştirici</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="video-container">
+        <video src="../../assets/videos/hakkimda.mp4" autoplay loop muted></video>
+    </div>
+
+</header>

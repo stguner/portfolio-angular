@@ -139,6 +139,14 @@ header{
     header{
         .navbar-container{
             .showcase{
+                a {
+                    text-decoration: none;
+                        color: #fff;
+                        margin: 0 8px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        position: relative;
+                }
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

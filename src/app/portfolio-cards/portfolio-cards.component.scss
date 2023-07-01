@@ -86,6 +86,16 @@ body {
     .ring:after {
       transform: translateX(-50%) translateY(-50%) rotate(310deg);
     }
+    .ring:nth-child(5)::before,
+    .ring:nth-child(5)::after {
+      transform: translateX(-50%) translateY(-50%) rotate(310deg);
+      opacity: 0;
+    }
+    .ring:nth-child(6)::before,
+    .ring:nth-child(6)::after {
+      transform: translateX(-50%) translateY(-50%) rotate(310deg);
+      opacity: 0;
+    }
   }
 }
 .ring,
@@ -129,7 +139,25 @@ body {
 }
 
 .card3 {
-  background-image: url("https://assets.codepen.io/489403/egypt.jpg");
+  background-image: url("../../assets/img/car_rent.png");
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+}
+
+.card4 {
+  background-image: url("../../assets/img/FPS_game.png");
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+}
+
+.card5 {
+  background-image: url("../../assets/img/smart_legacy.png");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+}
+
+.card6 {
+  background-image: url("../../assets/img/blockchain_item_identification.png");
   background-repeat: no-repeat;
   background-size: 140% 100%;
 }

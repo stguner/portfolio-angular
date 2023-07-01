@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: #2e2e31;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -224,8 +223,6 @@ p {
   height: 260px;
   width: 180px;
   position: absolute;
-  border: 1px solid black;
-  background: rgba(0, 0, 0, 0.5);
   transition: bottom 1s;
   flex-direction: column;
   bottom: -270px;
@@ -242,4 +239,30 @@ p {
 .fa-link {
   margin-left: 20px;
   font-size: 30px;
+}
+
+#projelerim{ 
+  min-height: 100vh;
+  position: relative;
+  .video-container2{
+    z-index: -1;
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 1;
+    }
+    &::after{
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+  }
 }

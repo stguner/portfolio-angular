@@ -13,7 +13,6 @@ body {
   max-width: 100%;
   min-height: 600px;
   min-width: 1100px;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   margin-right: 0px;
@@ -242,14 +241,13 @@ p {
 }
 
 #projelerim{ 
-  min-height: 100vh;
   position: relative;
   .video-container2{
     z-index: -1;
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     video{
         height: 100%;
@@ -265,4 +263,14 @@ p {
         width: 100%;
     }
   }
+}
+
+.projelerim_corousel{
+  animation: moving 5s linear infinite;
+}
+
+@keyframes moving {
+
+  from {transform: translate(0%);}
+  to {transform: translate(50%);}
 }

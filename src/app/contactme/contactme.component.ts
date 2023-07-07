@@ -10,7 +10,7 @@ export class ContactmeComponent {
   lastName = "GÜNER";
   email = "gunersuleymanturker@gmail.com";
   place = "Antalya";
-  profession = "Software Developer";
+  profession = "Web Developer";
   company = "Talya Bilişim";
-  message = "I am a software developer who is interested in web technologies and mobile technologies. I am also interested in artificial intelligence and machine learning. I am currently working as a software developer at Talya Bilişim.";
+  message = "Talya Bilişim şirketinde stajyer olarak çalışıyorum";
 }
